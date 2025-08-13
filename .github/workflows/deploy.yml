@@ -32,8 +32,8 @@ jobs:
       - name: Output information
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-          echo "ENV_TYPE: ${{ secrets.ENV_TYPE }}"
-deploy:
+            echo "ENV_TYPE: ${{ secrets.ENV_TYPE }}"
+  deploy:
     environment: production
     needs: test
     runs-on: ubuntu-latest
